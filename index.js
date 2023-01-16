@@ -37,7 +37,7 @@ const selectingDrivers = (function(){
 // which returns an array containing two stored functions
 
 
-// this is numerically correct, but technically wrong
+// this is numerically correct, but technically wrong for the lab
 // const createFareMultiplier = function(x){
 //     return function(){
 //         return x ** 2;
@@ -63,7 +63,7 @@ const fare = createFareMultiplier;
 //     return 2 * x
 // }
 
-// this is correct
+// this is correct 
 // const fareDoubler = function(z){
 //     return fare(z)(2)
 // }
@@ -71,6 +71,7 @@ const fare = createFareMultiplier;
 // this is correct using arrow functions
 const fareDoubler = z => fare(z)(2)
 
+// getting the hang of this
 const fareTripler = z => fare(z)(3)
 
 const selectDifferentDrivers = function(arrayOfDrivers, func){
